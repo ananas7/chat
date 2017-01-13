@@ -1,0 +1,79 @@
+stages:
+  - test:sumlib
+  - test:hypher
+  - test:chat
+  - test:rpc
+  - deploy:sumlib
+  - deploy:hypher
+  - deploy:rpc
+  - deploy:chat
+
+test_sumlib:
+  stage: test:sumlib
+  script:
+    - cd gulp-lib/
+    - yarn
+    - gulp sumlib-test
+
+test_hypher:
+  stage: test:hypher
+  script:
+    - cd gulp-lib/
+    - yarn
+    - gulp hypher-test
+
+test_chat:
+  stage: test:chat
+  script:
+    - cd gulp-lib/
+    - yarn
+    - gulp chat-test
+
+deploy_sumlib:
+  stage: deploy:sumlib
+  artifacts:
+      paths:
+      - sumlib/
+  script:
+    - cd gulp-lib/
+    - yarn
+    - gulp gitlab-sumlib
+  dependencies:
+    - test_sumlib
+
+deploy_hypher:
+  stage: deploy:hypher
+  artifacts:
+      paths:
+      - hypher/
+  script:
+    - cd gulp-lib/
+    - yarn
+    - gulp gitlab-hypher
+  dependencies:
+      - test_hypher
+
+deploy_rpc:
+  stage: deploy:rpc
+  artifacts:
+      paths:
+      - rpc-ws/
+  script:
+    - cd gulp-lib/
+    - yarn
+    - gulp gitlab-rpc-ws
+
+deploy_chat:
+  stage: deploy:chat
+  artifacts:
+    paths:
+    - chat/
+  script:
+    - cd gulp-lib/
+    - yarn
+    - gulp gitlab-chat
+  dependencies:
+    - deploy_sumlib
+    - deploy_hypher
+    - deploy_rpc
+    - test_chat

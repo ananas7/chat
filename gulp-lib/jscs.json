@@ -1,0 +1,13 @@
+{
+  "preset": "node-style-guide",
+  "validateIndentation": 4,
+  "validateQuoteMarks": { "mark": "'", "escape": true, "ignoreJSX": true },
+  "requireTrailingComma": false,
+  "requireCapitalizedComments": false,
+  "disallowQuotedKeysInObjects": false,
+  "disallowEmptyBlocks": true,
+  "fileExtensions": [
+    ".js",
+    ".jsx"
+  ]
+}

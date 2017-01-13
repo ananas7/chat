@@ -1,0 +1,22 @@
+{
+  "name": "rpc-ws",
+  "version": "1.0.0",
+  "description": "rpc for use websocket in express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "mocha": "^2.5.3",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.2"
+  }
+}

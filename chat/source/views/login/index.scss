@@ -1,0 +1,34 @@
+.btn-auth {
+  padding: 8px 12px;
+  outline: 0;
+  background-color: transparent;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border: none;
+  font-size: 18px;
+}
+.btn-main {
+  background-color: $blue-color;
+  color: $text-primary-color;
+}
+.btn-main:hover {
+  cursor: pointer;
+}
+.btn-second {
+  color: $text-second-color;
+}
+.btn-second:hover {
+  cursor: pointer;
+}
+.auth-btn-block {
+  justify-content: space-between;
+  padding-top: 16px;
+}
+.form-auth {
+  width: 300px;
+}
+.error-auth {
+  text-align: center;
+  font-size: 13px;
+  color: $blue-color;
+  padding-top: 16px;
+}

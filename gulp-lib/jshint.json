@@ -1,0 +1,13 @@
+{
+  "globals": {
+    "console": false,
+    "alert": false
+  },
+  "predef": ["-console", "-alert"],
+  "devel": false,
+  "undef": true,
+  "node": true,
+  "browser": true,
+  "esversion": 6,
+  "expr": true
+}

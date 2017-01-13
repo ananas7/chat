@@ -1,0 +1,22 @@
+{
+  "name": "chat",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ilya Lomtev",
+    "Phil Polkovnikov"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "open-sans-fontface": "^1.4.2",
+    "font-awesome": "^4.6.3"
+  }
+}

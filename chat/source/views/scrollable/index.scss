@@ -1,0 +1,18 @@
+.scrollable {
+  transform: translateZ(0);
+}
+.scroll-outer {
+  position: relative;
+}
+.scroll-outer:focus {
+  outline: none;
+}
+.scroll-cont {
+  overflow: hidden;
+}
+.scroll-inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

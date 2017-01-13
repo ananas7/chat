@@ -1,0 +1,68 @@
+.block-send {
+  background-color: $block-send-color;
+}
+.outer {
+  justify-content: center;
+  height: 100%;
+}
+.block-width {
+  width: 768px;
+}
+.block-outer {
+  width: 824px;
+}
+.block-outer-cont {
+  width: 816px;
+  padding-left: 8px;
+}
+.message {
+  width: 648px;
+  padding: 0 8px 0 0;
+}
+.message-text {
+  max-width: 632px;
+  word-wrap: break-word;
+  text-align: justify;
+}
+.message-login {
+  width: 112px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: $text-login-color;
+}
+.my-message {
+
+}
+.btn {
+  cursor: pointer;
+  color: $foreground-color-bar;
+  font-size: 32px;
+}
+.btn:hover, .btn:focus {
+  color: $foreground-color-bar-hover;
+}
+.btn-block {
+  position: absolute;
+  bottom: 12px;
+  right: -25px;
+}
+.fix-btn-bot {
+  padding: 0 0 4px 0;
+  outline: none;
+  background-color: inherit;
+  border: none;
+}
+
+.pad-mes {
+  padding-left: 8px;
+}
+.logout {
+  justify-content: center;
+  padding: 8px;
+  color: $text-second-color;
+  cursor: pointer;
+}
+.logout:hover {
+  color: $text-primary-color;
+}
